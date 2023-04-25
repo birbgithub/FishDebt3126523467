@@ -13,11 +13,11 @@ namespace FishDebt.Content.Items
             Tooltip.SetDefault("'The essence of water creatures'");
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 100;
 
-            Main.RegisterItemAnimation(Items.type, new DrawAnimationVertical(5, 7));
-            ItemID.Sets.AnimatesAsSoul[Items.type] = true;
+            Main.RegisterItemAnimation(Item.type, new DrawAnimationVertical(5, 7));
+            ItemID.Sets.AnimatesAsSoul[Item.type] = true;
 
-            ItemID.Sets.ItemIconPulse[Items.type] = true;
-            ItemID.Sets.ItemNoGravity[Items.type] = true;
+            ItemID.Sets.ItemIconPulse[Item.type] = true;
+            ItemID.Sets.ItemNoGravity[Item.type] = true;
         }
 
         public override void SetDefaults()
