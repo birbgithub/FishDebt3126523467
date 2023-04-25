@@ -1,6 +1,4 @@
-using Microsoft.Xna.Framework;
 using Terraria;
-using Terraria.DataStructures;
 using Terraria.ModLoader;
 using Terraria.ID;
 using Terraria.GameContent.Creative;
@@ -15,7 +13,6 @@ namespace FishDebt.Content.Items
             Tooltip.SetDefault("'The essence of water creatures'");
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 100;
 
-            Main.RegisterItemAnimation(Item.type, new DrawAnimationVertical(5, 7));
             ItemID.Sets.AnimatesAsSoul[Item.type] = true;
 
             ItemID.Sets.ItemIconPulse[Item.type] = true;
