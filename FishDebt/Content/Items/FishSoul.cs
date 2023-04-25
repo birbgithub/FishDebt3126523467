@@ -12,6 +12,12 @@ namespace FishDebt.Content.Items
             DisplayName.SetDefault("Soul of Water");
             Tooltip.SetDefault("'The essence of water creatures'");
             CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 100;
+
+            Main.RegisterItemAnimation(Items.type, new DrawAnimationVertical(5, 7));
+            ItemID.Sets.AnimatesAsSoul[Items.type] = true;
+
+            ItemID.Sets.ItemIconPulse[Items.type] = true;
+            ItemID.Sets.ItemNoGravity[Items.type] = true;
         }
 
         public override void SetDefaults()
